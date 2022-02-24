@@ -23,10 +23,6 @@ deltaXY = 0.1;  % Assume deltaX = deltaY
 % Declare the V0
 V0 = 1;
 
-% Simulation settings
-simSteps = 10; % Declare the simulation steps
-pauseTime = 0.02; % Time paused per simulation step in second
-
 % Calculate the dimension of solution matrix
 nx = L/deltaXY;
 ny = W/deltaXY;  
@@ -91,9 +87,9 @@ figure(2)
 [X,Y] = meshgrid(linspace(0,L,nx), linspace(0,W,ny));
 matrixSol = matrixSol';
 surf(X,Y,matrixSol)
-xlabel("x axis - Length")
-ylabel("y axis - Width")
-zlabel("z axis - Voltage")
+xlabel("X axis - Length")
+ylabel("Y axis - Width")
+zlabel("Z axis - Voltage")
 
 % View on X-Z plane
 view(0,0)
