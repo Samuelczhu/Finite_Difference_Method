@@ -132,6 +132,7 @@ for iSim = 1:simSteps
     matrixSolAnalytic = matrixSolAnalytic + 4*V0/pi* (1/n)*(cosh(n*pi*Xshifted/a)/cosh(n*pi*b/a)).*sin(n*pi*Y/a);
 
     % Plot the evolving surface
+    figure(3)
     surf(X,Y,matrixSolAnalytic)
     xlabel("X axis - Length")
     ylabel("Y axis - Width")
