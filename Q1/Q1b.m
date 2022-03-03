@@ -106,17 +106,6 @@ ylabel("Y axis - Width")
 zlabel("Z axis - Voltage")
 title("Finite Difference Method Solution")
 
-% % Calculate using the analytical series
-% figure(3)
-% for iSim = 1:simSteps
-%     % Traverse through the V function
-%     
-% 
-%     % Pause some time
-%     pause(pauseTime)
-% end
-
-
 % Calculate using the analytical series
 figure(3)
 % Calculate the a and b for the analytical series
